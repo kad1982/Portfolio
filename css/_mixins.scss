@@ -1,0 +1,46 @@
+@mixin list-reset {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-family: 'Gilroy';
+}
+
+@mixin btn-reset {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+	font-family: 'Gilroy';
+}
+
+@mixin text-reset {
+	padding: 0;
+	margin: 0;
+	font-family: 'Gilroy';
+}
+
+@mixin lighten-hover($color) {
+	transition: color 0.3s ease-in-out;
+
+	&:hover {
+		color: lighten($color, 20%);
+	}
+}
+
+@mixin bg-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+@mixin btn-primary($pt, $pr) {
+	@include btn-reset;
+	padding: $pt $pr;
+	background-color: var(--color_black);
+	border-radius: 20px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	color: var(--color_white);
+}

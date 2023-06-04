@@ -1,0 +1,177 @@
+.hero {
+	font-size: 0;
+
+	&__btn {
+		display: none;
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin: 32px var(--paddingRight) 44px var(--paddingLeft);
+
+		& .hero__text {
+			display: contents;
+		}
+
+		&-left {
+			max-width: 125px
+		}
+
+		&-title {
+			@include text-reset;
+			font-weight: 700;
+			font-size: 47px;
+			line-height: 59px;
+			color: var(--color_black2);
+		}
+
+		&-center {
+			max-width: 200px;
+
+			& span {
+				@include text-reset;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 24px;
+				color: var(--color_black2);
+			}
+		}
+
+		&-right {
+			width: 0;
+
+			.lang {
+				transform: rotate(-90deg);
+				display: flex;
+
+				.lang__item:not(:last-child) {
+					margin-right: 5px;
+				}
+
+				.lang__item:nth-child(2) {
+					border: 1px solid var(--color_grey);
+				}
+
+				& li a {
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 20px;
+					color: var(--color_grey);
+				}
+
+				& li a.active {
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 20px;
+					color: var(--color_black);
+				}
+			}
+		}
+	}
+
+	&__bottom {
+		margin: 0 var(--paddingRight) 104px var(--paddingLeft);
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	.burger {
+		@include btn-reset;
+		display: block;
+		position: relative;
+		z-index: 1;
+		// top: -3px;
+		width: 33px;
+		height: 19px;
+		padding: 0;
+		outline: none;
+		cursor: pointer;
+		background-color: transparent;
+
+
+		&__line {
+			position: absolute;
+			left: 0;
+			width: 33px;
+			height: 4px;
+			background-color: var(--color_black);
+
+
+			&:nth-child(1) {
+				top: 0;
+			}
+
+			&:nth-child(2) {
+				top: 50%;
+			}
+
+			&:nth-child(3) {
+				top: 100%;
+			}
+		}
+	}
+
+	.hero {
+		&__top {
+			align-items: flex-start;
+
+			&-right {
+				display: none;
+			}
+
+			& .hero__text {
+				display: block;
+			}
+
+			&-title {
+				font-size: 47px;
+				line-height: 58px;
+			}
+		}
+	}
+
+	.divLang {
+		ul {
+			transform: rotate(-90deg);
+			display: flex;
+			position: absolute;
+			right: 28px;
+			bottom: 57px;
+
+			.lang__item:not(:last-child) {
+				margin-right: 5px;
+			}
+
+			.lang__item:nth-child(2) {
+				border: 1px solid var(--color_grey);
+			}
+
+			& li a {
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 20px;
+				color: var(--color_grey);
+			}
+
+			& li a.active {
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 20px;
+				color: var(--color_black);
+			}
+		}
+	}
+
+
+	.header__wrapper .header__nav--close {
+		display: none;
+	}
+
+	.stop-scroll {
+		overflow: hidden;
+	}
+
+
+}

@@ -1,0 +1,17 @@
+.portfolio {
+	&__conteiner {
+		background-color: var(--color_grey2);
+		text-align: center;
+		padding-top: 112px;
+		padding-bottom: 96px
+	}
+
+	&__title {
+		margin-bottom: 47px;
+		font-weight: 700;
+		font-size: 34px;
+		line-height: 42px;
+		text-align: center;
+		color: var(--color_black2);
+	}
+}

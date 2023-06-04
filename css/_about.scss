@@ -1,0 +1,39 @@
+.about {
+	&__conteiner {
+		background-color: var(--color_grey2);
+		text-align: center;
+		padding-top: 120px;
+		padding-bottom: 107px
+	}
+
+	&__title {
+		@include text-reset;
+		margin-bottom: 24px;
+
+		& span {
+			font-size: 34px;
+			line-height: 42px;
+			text-align: center;
+			font-weight: 700;
+			color: var(--color_black2);
+		}
+	}
+
+	&__text {
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 485px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: var(--color_black2);
+		&-top{
+			margin-bottom: 42px;
+		}
+		&-center{
+			margin-bottom: 42px;
+		}
+	}
+}

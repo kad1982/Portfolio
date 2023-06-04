@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Portfolio</title>
+	<script defer src="./js/main.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__conteiner container">
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li class="header__item">
+						<a href="#" class="header__link">
+							<span class="eng">Home</span>
+							<span class="ru">Главная</span>
+						</a>
+					</li>
+					<li class="header__item">
+						<a href="#about" class="header__link">
+							<span class="eng">About me</span>
+							<span class="ru">Обо мне</span>
+						</a>
+					</li>
+					<li class="header__item">
+						<a href="#skills" class="header__link">
+							<span class="eng">Skills</span>
+							<span class="ru">Навыки</span>
+						</a>
+					</li>
+					<li class="header__item">
+						<a href="#portfolio" class="header__link">
+							<span class="eng">Portfolio</span>
+							<span class="ru">Портфолио</span>
+						</a>
+					</li>
+					<li class="header__item">
+						<a href="#contacs" class="header__link">
+							<span class="eng">Contacts</span>
+							<span class="ru">Контакты</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="header__hr"></div>
+		</div>
+	</header>
+	<main>
+		<section class="hero" id="hero">
+			<div class="hero__conteiner container">
+				<div class="hero__top">
+					<div class="hero__text">
+						<div class="hero__top-left">
+							<h1 class="hero__top-title"><span class="eng">Kirillova <br />Anna</span><span class="ru">Кириллова
+									<br />Анна</span></h1>
+						</div>
+						<div class="hero__top-center"><span class="eng">Frontend developer<br />
+								40 years old, Kirov</span><span class="ru">Frontend разработчик<br /> 40 лет, Киров</span>
+						</div>
+					</div>
+					<div class="hero__top-right">
+						<ul class="hero__top-right-lang lang lang__list">
+							<li class="lang__item"><a href="#" class="lang__item-link active">RU</a></li>
+							<li class="lang__item">
+								<!-- <hr /> -->
+							</li>
+							<li class="lang__item"><a href="#" class="lang__item-link">ENG</a></li>
+						</ul>
+					</div>
+					<button class="hero__btn burger">
+						<span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span>
+					</button>
+				</div>
+				<div class="hero__bottom">
+					<img src="./img/photo.jpg" alt="photo">
+				</div>
+			</div>
+		</section>
+		<section class="about" id="about">
+			<div class="about__conteiner">
+				<h2 class="about__title"><span class="eng">About me</span>
+					<span class="ru">Обо мне</span></h2>
+				<div class="about__text">
+					<div class="about__text-top">
+						<span class="eng">Hi, I'm Anna– a frontend developer from Kirov.
+							I am interested in frontend and everything related to it.</span>
+						<span class="ru">Привет, меня зовут Анна. Меня интересует frontend и все, что с ним связано</span>
+					</div>
+					<div class="about__text-center">
+						<span class="eng">I graduated from the "Fontend dveloper Pro" course in Skillbox.</span>
+						<span class="ru">Я закончила курсы "Fontend разработчик Pro" в Skillbox.</span>
+					</div>
+					<div class="about__text-bottom">
+						<span class="eng">I am ready to implement great projects
+							with wonderful people.</span>
+						<span class="ru">Я готова реализовать отличный проект с замечательными людьми</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="skills" id="skills">
+			<div class="skills__conteiner container">
+				<h2 class="skills__title">
+					<span class="eng">Skills</span>
+					<span class="ru">Навыки</span>
+				</h2>
+				<p class="skills__title-descr">
+					<span class="eng">I work in such programs as</span>
+					<span class="ru">Я работаю в таких программах как</span></p>
+				<ul class="skills__list">
+					<li class="skills__item">
+						<div class="skills__item-box">
+							<img src="./img/vue.svg" alt="vue" class="skills__item-img">
+							<div class="skills__textraiting">
+								<h3 class="skills__item-heder">Vue</h3>
+								<div class="skills__item-grade">
+									<img src="./img/star_fill.svg" alt="grade 4 из 5">
+									<img src="./img/star_fill.svg" alt="">
+									<img src="./img/star_fill.svg" alt="">
+									<img src="./img/star_fill.svg" alt="">
+									<img src="./img/star.svg" alt="">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="skills__item">
+						<div class="skills__item-box">
+							<img src="./img/figma.svg" alt="figma" class="skills__item-img">
+							<div class="skills__textraiting">
+								<h3 class="skills__item-heder">Figma</h3>
+								<div class="skills__item-grade">
+									<img src="./img/star_fill.svg" alt="grade 4 из 5">
+									<img src="./img/star_fill.svg" alt="">
+									<img src="./img/star_fill.svg" alt="">
+									<img src="./img/star_fill.svg" alt="">
+									<img src="./img/star.svg" alt="">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="skills__item">
+						<div class="skills__item-box">
+							<img src="./img/Photoshop.svg" alt="photoshop" class="skills__item-img">
+							<div class="skills__textraiting">
+								<h3 class="skills__item-heder">Adobe
+									Photoshop</h3>
+								<div class="skills__item-grade">
+									<img src="./img/star_fill.svg" alt="grade 4 из 5">
+									<img src="./img/star_fill.svg" alt="">
+									<img src="./img/star_fill.svg" alt="">
+									<img src="./img/star_fill.svg" alt="">
+									<img src="./img/star.svg" alt="">
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="portfolio" id="portfolio">
+			<div class="portfolio__conteiner">
+				<h2 class="portfolio__title"><span class="eng">Portfolio</span>
+					<span class="ru">Портфолио</span></h2>
+			</div>
+		</section>
+		<section class="contacs" id="contacs">
+			<div class="contacs__conteiner container">
+				<h2 class="contacs__title"> <span class="eng">Contacts</span>
+					<span class="ru">Контакты</span></h2>
+				<p class="contacs__title-descr">
+					<span class="eng">Want to know more or just chat?<br />
+						You are welcome!</span>
+					<span class="ru">Хотите узнать больше и просто поболтать? <br />Добро пожаловать!</span>
+				</p>
+				<button class="contacs__btn">Send message</button>
+				<img src="./img/telegram.svg" alt="telegram" class="contacs__img">
+				<p class="contacs__descr">
+					<span class="eng">Like me on
+						Telegram</span>
+					<span class="ru">ищи меня в Telegram</span>
+				</p>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>

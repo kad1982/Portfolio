@@ -1,0 +1,20 @@
+$site-bgcolor: #FFFFFF;
+$site-bgcolor_2:#E5E5E5;
+
+:root {
+	--holst: 1445px;
+	--color_white: #FFFFFF;
+	--color_grey: #828282;
+	--color_grey2: #F6F6F6;
+	--color_black: #333333;
+	--color_black2: #070707;
+	--paddingLeft: 250px;
+	--paddingRight: 250px;
+}
+
+@media only screen and (max-width: 1400px) {
+:root{
+	--paddingLeft: 29px;
+	--paddingRight: 29px;
+}
+}

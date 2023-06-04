@@ -1,0 +1,37 @@
+.contacs {
+	&__title {
+		@include text-reset;
+		margin-bottom: 20px;
+		font-weight: 700;
+		font-size: 34px;
+		line-height: 42px;
+		text-align: center;
+		color: #070707;
+
+		&-descr {
+			@include text-reset;
+			margin-bottom: 29px;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			text-align: center;
+			color: var(--color_black2)
+		}
+	}
+
+	&__btn {
+		@include btn-primary(13px, 28px);
+		margin-bottom: 85px;
+	}
+
+	&__conteiner {
+		margin: 114px 250px 123px 250px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__img{
+		margin-bottom: 45px;
+	}
+}

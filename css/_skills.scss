@@ -35,11 +35,13 @@
 			text-align: center;
 			color: var(--color_grey);
 		}
-&-grade{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
+		&-grade {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
 		&-box {
 			// display: inline-flex;
 			// flex-direction: column;

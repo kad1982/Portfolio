@@ -1,17 +1,23 @@
 .skills {
 	&__conteiner {
-		margin: 90px 250px 110px 250px;
+		margin: 90px var(--paddingRight) 110px var(--paddingLeft);
 	}
 
 	&__list {
 		display: flex;
 		justify-content: center;
-		align-items: flex-start;
+		align-items: stretch;
 		flex-wrap: wrap;
 	}
-	&__item{
-		height: 100%;
-		border:1px solid red;
+
+	&__item {
+		height: auto;
+
+		&-img {
+			width: 89px;
+			height: 88px;
+			margin: 0 auto;
+		}
 	}
 
 	&__item:not(:last-child) {
@@ -29,23 +35,27 @@
 			text-align: center;
 			color: var(--color_grey);
 		}
-
+&-grade{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 		&-box {
 			// display: inline-flex;
 			// flex-direction: column;
 			// align-items: center;
 			// justify-content: center;
 			// width: 167px;
-			border:1px solid red;
 			display: flex;
 			flex-direction: column;
 			height: 100%;
 			width: 167px;
 		}
 	}
-	&__textraiting{
-		margin-top: auto;
-	}
+
+	// &__textraiting {
+	// 	margin-top: auto;
+	// }
 
 	&__title {
 		@include text-reset;

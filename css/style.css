@@ -367,7 +367,7 @@ ul {
 }
 
 .skills__conteiner {
-  margin: 90px var(--paddingRight) 110px var(--paddingLeft);
+  padding: 90px var(--paddingRight) 110px var(--paddingLeft);
 }
 .skills__list {
   display: flex;

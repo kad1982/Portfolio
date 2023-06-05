@@ -492,7 +492,7 @@ ul {
   margin-bottom: 85px;
 }
 .contacs__conteiner {
-  margin: 114px 250px 123px 250px;
+  padding: 114px var(--paddingRight) 123px var(--paddingLeft);
   display: flex;
   flex-direction: column;
   justify-content: center;

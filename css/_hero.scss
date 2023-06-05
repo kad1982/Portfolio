@@ -9,7 +9,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
-		margin: 32px var(--paddingRight) 44px var(--paddingLeft);
+		padding: 32px var(--paddingRight) 44px var(--paddingLeft);
 
 		& .hero__text {
 			display: contents;

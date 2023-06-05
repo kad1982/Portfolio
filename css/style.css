@@ -192,7 +192,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 32px var(--paddingRight) 44px var(--paddingLeft);
+  padding: 32px var(--paddingRight) 44px var(--paddingLeft);
 }
 .hero__top .hero__text {
   display: contents;
@@ -441,16 +441,50 @@ ul {
 .portfolio__conteiner {
   background-color: var(--color_grey2);
   text-align: center;
-  padding-top: 112px;
-  padding-bottom: 96px;
+  padding: 112px var(--paddingRight) 96px var(--paddingLeft);
 }
 .portfolio__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Gilroy";
   margin-bottom: 47px;
   font-weight: 700;
   font-size: 34px;
   line-height: 42px;
   text-align: center;
   color: var(--color_black2);
+}
+.portfolio__items {
+  position: relative;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  height: auto;
+}
+.portfolio__items:not(:last-child) {
+  margin-right: 25px;
+}
+.portfolio__items-link {
+  display: inline-block;
+}
+.portfolio__items-link::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.portfolio__wrap {
+  height: 100%;
+}
+.portfolio__project {
+  display: grid;
+  gap: 60px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .contacs__title {

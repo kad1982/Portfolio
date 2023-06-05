@@ -2,16 +2,54 @@
 	&__conteiner {
 		background-color: var(--color_grey2);
 		text-align: center;
-		padding-top: 112px;
-		padding-bottom: 96px
+		padding: 112px var(--paddingRight) 96px var(--paddingLeft);
 	}
 
 	&__title {
+		@include text-reset;
 		margin-bottom: 47px;
 		font-weight: 700;
 		font-size: 34px;
 		line-height: 42px;
 		text-align: center;
 		color: var(--color_black2);
+	}
+
+	&__items {
+		position: relative;
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+		box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+		height: auto;
+
+		&:not(:last-child) {
+			margin-right: 25px;
+		}
+
+		&-link {
+			display: inline-block;
+
+			&::after {
+				display: inline-block;
+				position: absolute;
+				content: '';
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+			}
+		}
+	}
+
+	&__wrap {
+		height: 100%;
+	}
+
+	&__project {
+		display: grid;
+		gap:60px;
+		justify-content: center;
+		align-items: flex-start;
 	}
 }
